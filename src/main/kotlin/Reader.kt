@@ -1,5 +1,11 @@
 
-fun readln() = readLine()!!
+fun readln(): String {
+    var input: String?
+    do {
+        input = readLine()
+    } while (input.isNullOrEmpty())
+    return input
+}
 
 fun readInt() = readln().toInt()
 fun readLong() = readln().toLong()

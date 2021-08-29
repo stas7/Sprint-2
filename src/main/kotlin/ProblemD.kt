@@ -10,7 +10,6 @@ class ProblemD {
             numberOfIterations--
         }
         for (iteration in listOfCustomerPaymentCapability) {
-            iteration.sortDescending()
             println(findMaxIncome(iteration))
         }
     }

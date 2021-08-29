@@ -2,7 +2,7 @@ class ProblemB {
 
     fun main() {
 
-        var numberOfStrings = getNumberOfIterations()
+        var numberOfStrings = readInt()
         var listOfStringTemplates = ArrayList<IntArray>()
         while (numberOfStrings > 0) {
             listOfStringTemplates.add(readIntArray(2))
@@ -14,14 +14,5 @@ class ProblemB {
             }
             println()
         }
-    }
-
-    fun getNumberOfIterations(): Int {
-        var numberOfIterations: Int
-        do {
-            // тут бы вывод в консоль что ожидается, но по условиям задачи быть не должно
-            numberOfIterations = readInt()
-        } while (numberOfIterations < 1 || numberOfIterations > 100)
-        return numberOfIterations
     }
 }
